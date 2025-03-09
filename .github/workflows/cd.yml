@@ -26,7 +26,7 @@ jobs:
         uses: google-github-actions/setup-gcloud@v1
         with:
           project_id: notely-453210
-          service_account_key: ${{ GCP_CREDENTIALS }}
+          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           export_default_credentials: true
 
       - name: deploy to GC
